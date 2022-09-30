@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&amp;family=Rokkitt:wght@600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: ["Mulish", "sans-serif"],
+                        mono: ["Rokkitt", "monospace"],
+                    },
+                },
+            };
+        </script>
+        <title>Login Modal</title>
+    </head>
+    <body>
+        <!-- Main Container -->
+        <main
+            class="flex items-center justify-center py-6 md:px-12 lg:px-36 min-h-screen bg-rose-100"
+        >
+            <!-- Card Container -->
+            <div
+                class="relative max-h-[90vh] overflow-hidden flex bg-white text-gray-600 rounded-xl shadow-xl"
+            >
+                <!-- Left Side -->
+                <div class="flex flex-col p-12 shadow-xl md:shadow-none md:w-1/2">
+                    <h1 class="font-mono text-4xl">Log in</h1>
+                    <p class="mt-3 font-sans font-light max-w-sm">
+                        Log in to your account to upload or download pictures, videos or music.
+                    </p>
+                    <input
+                        type="text"
+                        placeholder="Enter your email address"
+                        class="mt-12 w-full block p-6 border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light"
+                    />
+                    <!-- Middle Content -->
+                    <div
+                        class="flex flex-col items-center justify-between space-y-6 mt-8 md:flex-row md:space-y-0"
+                    >
+                        <a href="#" class="font-thin text-cyan-700">Forgot password?</a>
+                        <button
+                            class="py-4 px-7 rounded-lg md:w-auto bg-cyan-700 text-white flex items-center space-x-2 font-sans font-bold shadow-md shadow-cyan-100 transition hover:shadow-xl hover:bg-opacity-90 hover:-translate-y-0.5 duration-150"
+                        >
+                            <span>Next</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-6"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="#ffffff"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <line x1="13" y1="18" x2="19" y2="12"></line>
+                                <line x1="13" y1="6" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Border / Divider -->
+                    <div class="border-b border-b-gray-300 mt-12"></div>
+
+                    <!-- Log in with -->
+                    <p
+                        class="text-sm font-sans font-light text-gray-500 mt-6 mb-7 text-center lowercase"
+                    >
+                        or Log In with
+                    </p>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex font-sans space-x-4">
+                        <button
+                            class="flex items-center justify-center space-x-3 border rounded border-gray-300 shadow-sm py-3 px-6 transition w-2/4 duration-200 hover:shadow-lg hover:-translate-y-0.35 hover:bg-opacity-30"
+                        >
+                            <img src="images/facebook.png" alt="Facebook" class="w-7" />
+                            <span>Facebook</span>
+                        </button>
+                        <button
+                            class="flex items-center justify-center space-x-3 border rounded border-gray-300 shadow-sm py-3 px-6 transition w-2/4 duration-200 hover:shadow-lg hover:-translate-y-0.35 hover:bg-opacity-30"
+                        >
+                            <img src="images/google.png" alt="Facebook" class="w-6" />
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <img
+                    src="images/image.jpg"
+                    alt="Water"
+                    class="w-1/2 rounded-r-xl min-h-[35rem] h-full object-cover hidden md:block"
+                />
+
+                <!-- Close Button -->
+                <button
+                    class="absolute group top-4 right-4 bg-white flex items-center justify-center rounded-full h-10 w-10 duration-150 bg-gray-200 md:bg-white hover:shadow-xl hover:-translate-y-0.5"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 text-black group-hover:text-gray-600"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </body>
+</html>
