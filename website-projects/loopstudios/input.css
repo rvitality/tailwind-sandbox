@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.item-container {
+    @apply flex flex-col space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+
+.item {
+    @apply relative overflow-hidden md:w-1/4;
+}
+
+.item-title {
+    @apply absolute bottom-4 px-8 duration-200 group-hover:scale-105 group-hover:text-black md:pl-4  md:w-48 md:bottom-6 lg:pl-8;
+}
+
+.item-overlay {
+    @apply absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
 #hero {
     background-image: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
