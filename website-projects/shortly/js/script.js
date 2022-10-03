@@ -2,6 +2,17 @@ const errorMsg = document.querySelector("#error-msg");
 const urlForm = document.querySelector("#url-form");
 const linkInput = document.querySelector("#link-input");
 
+const menuBtn = document.querySelector("#menu-btn");
+const mobileMenu = document.querySelector("#mobile-menu");
+
+// ! MOBILE MENU =========================================
+menuBtn.addEventListener("click", e => {
+    menuBtn.classList.toggle("open");
+    // mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("show-menu");
+});
+
+// ! FORM URL INPUTV VALIDATION ==========================
 const validURL = str => {
     var pattern = new RegExp(
         "^(https?:\\/\\/)?" + // protocol
