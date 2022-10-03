@@ -496,16 +496,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
-}
-
-.top-48 {
-  top: 12rem;
 }
 
 .top-0 {
@@ -524,20 +524,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.right-4 {
-  right: 1rem;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.top-6 {
-  top: 1.5rem;
+.top-48 {
+  top: 12rem;
 }
 
 .z-40 {
@@ -596,12 +584,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-0 {
+  height: 0px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.h-6 {
+  height: 1.5rem;
 }
 
 .w-full {
@@ -644,22 +632,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .border-2 {
@@ -679,14 +671,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: transparent;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -721,20 +713,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.25rem;
 }
 
+.pl-12 {
+  padding-left: 3rem;
+}
+
 .pt-14 {
   padding-top: 3.5rem;
 }
 
 .pb-16 {
   padding-bottom: 4rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
 }
 
 .text-center {
@@ -749,14 +737,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Josefin Sans, sans-serif;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -802,6 +790,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .brightness-75 {
   --tw-brightness: brightness(.75);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -825,12 +817,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-100 {
   transition-duration: 100ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .item-container {
@@ -960,7 +960,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0;
   background: #fff;
   transform: rotate(0);
-  transition: all 0.05s;
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
@@ -987,19 +987,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
+.show-menu {
+  height: 100vh;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-pink-500:hover {
   --tw-text-opacity: 1;
   color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {

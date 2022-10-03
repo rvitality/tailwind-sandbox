@@ -50,7 +50,7 @@
     left: 0;
     background: #fff;
     transform: rotate(0);
-    transition: all 0.05s;
+    transition: all 0.5s;
 }
 
 .hamburger-middle {
@@ -73,4 +73,10 @@
 }
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.show-menu {
+    height: 100vh;
+    opacity: 1;
+    pointer-events: auto;
 }

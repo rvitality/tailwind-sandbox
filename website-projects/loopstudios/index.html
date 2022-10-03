@@ -68,7 +68,7 @@
                         <button
                             id="menu-btn"
                             type="button"
-                            class="open z-40 block hamburger focus:outline-none"
+                            class="z-40 block hamburger focus:outline-none"
                         >
                             <span class="hamburger-top"></span>
                             <span class="hamburger-middle"></span>
@@ -78,7 +78,8 @@
                 </nav>
                 <!-- Mobile Menu -->
                 <div
-                    class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-start justify-center uppercase text-lg bg-black space-y-4 pl-12 p-4 text-white min-h-screen min-w-full"
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-start justify-center uppercase text-lg bg-black space-y-4 pl-12 p-4 text-white min-w-full h-0 overflow-hidden opacity-0 pointer-events-none transition-all duration-500"
                 >
                     <a href="#" class="hover:text-pink-500">About</a>
                     <a href="#" class="hover:text-pink-500">Careers</a>
