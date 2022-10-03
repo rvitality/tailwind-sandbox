@@ -7,3 +7,9 @@
         @apply px-8 py-3 text-white bg-cyan rounded-full inline-block duration-150 hover:opacity-70;
     }
 }
+
+#cta {
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
