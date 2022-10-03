@@ -16,7 +16,39 @@
         <title>Shortly - URL Shortener</title>
     </head>
     <body>
-        <h1 class="text-4xl mb-4">Welcome</h1>
-        <p>Start building your Tailwind project</p>
+        <!-- HEADER -->
+        <header class="relative container px-6 py-8 mx-auto flex justify-between">
+            <div class="flex space-x-20">
+                <img src="images/logo.svg" alt="Logo" />
+                <nav class="hidden lg:flex">
+                    <ul class="flex space-x-8 font-bold">
+                        <li>
+                            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+                                >Features</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+                                >Pricing</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+                                >Resources</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="space-x-6 font-bold text-grayishViolet hidden lg:block">
+                <a href="#" class="hover:text-veryDarkViolet">Login</a>
+                <a
+                    href="#"
+                    class="px-8 py-3 text-white bg-cyan rounded-full duration-150 hover:opacity-70"
+                    >Sign Up</a
+                >
+            </div>
+        </header>
     </body>
 </html>
