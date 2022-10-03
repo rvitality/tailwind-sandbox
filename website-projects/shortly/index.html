@@ -18,8 +18,8 @@
     <body>
         <!-- HEADER -->
         <header class="relative container px-6 py-8 mx-auto flex justify-between">
-            <div class="flex space-x-20">
-                <img src="images/logo.svg" alt="Logo" />
+            <div class="flex space-x-20 items-center">
+                <img src="images/logo.svg" alt="Logo" class="h-9" />
                 <nav class="hidden lg:flex">
                     <ul class="flex space-x-8 font-bold">
                         <li>
@@ -43,12 +43,42 @@
 
             <div class="space-x-6 font-bold text-grayishViolet hidden lg:block">
                 <a href="#" class="hover:text-veryDarkViolet">Login</a>
-                <a
-                    href="#"
-                    class="px-8 py-3 text-white bg-cyan rounded-full duration-150 hover:opacity-70"
-                    >Sign Up</a
-                >
+                <a href="#" class="primary-btn">Sign Up</a>
             </div>
         </header>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div
+                class="container mx-auto px-6 py-12 flex flex-col-reverse space-x-10 md:flex-row lg:space-x-4"
+            >
+                <!-- HERO TEXTS -->
+                <div
+                    class="flex flex-col justify-center items-center text-center md:w-1/2 md:items-start md:text-left"
+                >
+                    <h1
+                        class="text-4xl leading-tight lg:text-6xl sm:text-5xl sm:leading-tight lg:leading-tight"
+                    >
+                        More than just
+                        <span class="font-semibold">shorter</span> links
+                    </h1>
+                    <p class="text-lg mt-6 text-justify text-gray-400 md:text-xl lg:max-w-md">
+                        Build your brand's recognition and get detailed insights on how your links
+                        are performing.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="primary-btn mt-8 py-6 text-base font-bold w-max shadow-md md:shadow-lg lg:text-lg lg:mt-10"
+                        >Get Started</a
+                    >
+                </div>
+
+                <!-- HERO IMAGE -->
+                <div class="margin-auto mb-14 md:w-1/2 md:mb-0">
+                    <img src="images/illustration-working.svg" alt="" />
+                </div>
+            </div>
+        </section>
     </body>
 </html>
