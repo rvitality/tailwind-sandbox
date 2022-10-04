@@ -2,6 +2,13 @@ module.exports = {
     content: ["./*.html"],
     darkMode: "class",
     theme: {
+        screens: {
+            xs: "375px",
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+        },
         extend: {
             colors: {
                 darkBlue: "hsl(217, 28%, 15%)",
