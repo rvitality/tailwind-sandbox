@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,23 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/style.css" />
+
+        <script>
+            // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
+
+            if (
+                localStorage.getItem("color-theme") === "dark" ||
+                (!("color-theme" in localStorage) &&
+                    window.matchMedia("(prefers-color-scheme:dark)").matches)
+            ) {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
+        </script>
+
+        <script src="js/script.js" defer></script>
+
         <title>Fylo</title>
     </head>
     <body class="dark:bg-darkBlue dark:text-white font-opensans">
@@ -58,7 +75,7 @@
                     <!-- Light SVG Icon -->
                     <svg
                         id="theme-toggle-light-icon"
-                        class="w-5 h-5"
+                        class="w-5 h-5 hidden"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
