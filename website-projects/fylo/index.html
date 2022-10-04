@@ -33,7 +33,7 @@
     <body class="dark:bg-darkBlue dark:text-white font-opensans">
         <!-- HEADER -->
         <header
-            class="section-container py-12 flex flex-col items-center justify-between space-y-3 md:flex-row md:space-y-0"
+            class="container section-container py-12 flex flex-col items-center justify-between space-y-3 md:flex-row md:space-y-0"
         >
             <!-- LOGO -->
             <a href="#" class="flex items-center justify-center h-12">
@@ -96,7 +96,7 @@
             class="bg-curvy-light-mode bg-no-repeat bg-contain bg-bottom dark:bg-curvy-dark-mode"
         >
             <div
-                class="section-container flex flex-col items-center text-center md:text-left md:flex-row md:pt-4 pb-52"
+                class="container section-container flex flex-col items-center text-center md:text-left md:flex-row md:pt-4 pb-52"
             >
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h1
@@ -124,7 +124,7 @@
 
         <!-- FEATURES -->
         <section id="features " class="bg-gray-50 dark:bg-darkBlue1">
-            <div class="section-container py-20 space-y-24">
+            <div class="container section-container py-20 space-y-24">
                 <!-- First Row -->
                 <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
                     <!-- ITEM 1 -->
@@ -198,7 +198,7 @@
         <!-- PRODUCTIVE  -->
         <section id="productive">
             <div
-                class="section-container flex flex-col space-y-12 items-center py-14 md:flex-row md:space-y-0"
+                class="container section-container flex flex-col space-y-12 items-center py-14 md:flex-row md:space-y-0"
             >
                 <img
                     src="images/illustration-stay-productive.png"
@@ -233,7 +233,7 @@
         <!-- TESTIMONIALS -->
         <section id="testimonials">
             <div
-                class="section-container relative py-10 flex flex-wrap justify-between space-y-8 md:py-20 lg:space-y-0 lg:flex-nowrap lg:flex-row lg:space-x-12"
+                class="container section-container relative flex flex-wrap justify-between space-y-8 pt-14 pb-80 md:pb-96 lg:space-y-0 lg:flex-nowrap lg:flex-row lg:space-x-12"
             >
                 <img
                     src="images/bg-quotes.png"
@@ -243,7 +243,7 @@
 
                 <!-- BOX 1 -->
                 <div
-                    class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-[48%] lg:w-1/3"
+                    class="flex flex-col p-10 shadow-xl space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-[48%] lg:w-1/3"
                 >
                     <p class="text-sm leading-5 md:text-lg">
                         Fylo has improved our team productivity by an order of magnitude. Since
@@ -264,7 +264,7 @@
 
                 <!-- BOX 2 -->
                 <div
-                    class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-[48%] lg:w-1/3"
+                    class="flex flex-col p-10 shadow-xl space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-[48%] lg:w-1/3"
                 >
                     <p class="text-sm leading-5 md:text-lg">
                         Fylo has improved our team productivity by an order of magnitude. Since
@@ -285,7 +285,7 @@
 
                 <!-- BOX 3 -->
                 <div
-                    class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-full lg:w-1/3"
+                    class="flex flex-col p-10 shadow-xl space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-full lg:w-1/3"
                 >
                     <p class="text-sm leading-5 md:text-lg">
                         Fylo has improved our team productivity by an order of magnitude. Since
@@ -302,6 +302,36 @@
                             <p class="text-xs font-extralight">Founder & CEO. Huddle</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EARLY ACCESS  -->
+        <section id="early-access" class="px-6 dark:bg-darkBlue2">
+            <div
+                class="relative -top-40 max-w-4xl mx-auto p-6 space-y-6 text-center rounded-lg bg-gray-200 dark:bg-darkBlue1 md:p-16"
+            >
+                <h5 class="text-2xl font-bold md:text-3xl">
+                    Get early <span class="text-accentCyan">access</span> today
+                </h5>
+                <p class="text-sm">
+                    It only takes a minute to sign up and our free starter tier is extremely
+                    generous. If you have any questions, our support team would be happy to help
+                    you.
+                </p>
+
+                <!-- Input -->
+                <div class="flex flex-col space-y-6 md:space-y-0 md:space-x-7 md:flex-row">
+                    <input
+                        type="email"
+                        placeholder="email@example.com"
+                        class="text-black inline-block w-full rounded-full px-10 py-3 placeholder:text-gray-600 md:flex-1"
+                    />
+                    <button
+                        class="w-full rounded-full capitalize px-8 py-4 bg-accentCyan bg-opacity-80 text-white duration-150 hover:bg-opacity-100 hover:scale-95 md:w-max"
+                    >
+                        Get started for free
+                    </button>
                 </div>
             </div>
         </section>

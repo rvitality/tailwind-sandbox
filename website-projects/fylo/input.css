@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .section-container {
-    @apply max-w-7xl px-3 mx-auto md:px-10;
+    @apply px-3 mx-auto md:px-10 md:max-w-7xl;
 }
