@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-container {
+    @apply max-w-7xl px-10 mx-auto;
+}
